@@ -34,14 +34,14 @@ healthcare_data_raw  ──(SQL ELT)──>  healthcare_data_clean  ───>  
 
 Before running any analytics, the raw healthcare dataset (`healthcare_data_raw`) required substantial data engineering to handle inconsistent formatting, type casting, and data integrity gaps. 
 
-#### 🔧 Key Transformation Steps:
+###  Key Transformation Steps:
 * **Deterministic Hashing (`patient_id`):** The raw dataset did not include unique patient identifiers. Generating random UUIDs means every script refresh breaks data lineage. To fix this, I implemented a deterministic hashing algorithm using `FARM_FINGERPRINT()` on a concatenated string of natural keys (`Gender`, `Age`, and `Date of Admission`). This ensures returning patients consistently map to the same ID across execution cycles.
 * **Datetime Optimization (`admission_date` & `discharge_date`):** Converted raw timestamp/string strings into strict standardized ISO `DATE` formats to enable optimized time-series tracking.
 * **Calculated Metrics (`length_of_stay`):** Engineered a new operational metric using `DATE_DIFF` to calculate the exact number of days a patient occupied a hospital bed.
 * **Text Standardization (`medical_condition`):** Applied `UPPER(TRIM(...))` to eliminate leading/trailing whitespaces and case-sensitivity duplicates in diagnostic data (e.g., standardizing "Asthma ", "asthma", and "ASTHMA" into a single category).
 * **Financial Schema Enforcement (`total_charges` & `age`):** Cast billing numbers into highly accurate `NUMERIC` types to avoid floating-point rounding errors in financial reporting, and standardized `Age` into `INT64`.
 
-#### 💻 The SQL Pipeline Script:
+####  The SQL Pipeline Script:
 
 ```sql
 -- =====================================================
