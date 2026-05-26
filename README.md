@@ -197,11 +197,11 @@ LIMIT 10;
 
 ---
 
-## 📈 Section 4: Data Visualization & Dashboard Architecture (Tableau)
+## Section 4: Data Visualization & Dashboard Architecture (Tableau)
 
 The semantic reporting layer built inside Google BigQuery serves as the direct data source for an interactive **Tableau Executive Dashboard**. By processing aggregations and window functions directly within the cloud data warehouse (SQL), Tableau's rendering speed is maximized, eliminating the need for heavy, unoptimized calculated fields within the BI tool itself.
 
-### 🎨 Dashboard Layout & Component Mapping:
+### Dashboard Layout & Component Mapping:
 
 1. **Hospital Capacity Planning & Operations**
    * **Source View:** `v_daily_admissions`
@@ -218,7 +218,7 @@ The semantic reporting layer built inside Google BigQuery serves as the direct d
 
 ---
 
-## 🚀 How to Run This Project Locally
+##  How to Run This Project Locally
 1. Clone this repository to your machine.
 2. Load the raw data into a Google BigQuery dataset named `healthcare_analysis`.
 3. Execute `scripts/01_data_transformation.sql` to build the clean production table.
