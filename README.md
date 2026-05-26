@@ -3,7 +3,7 @@
 ##  Author
 * **Name:** Ubonanam Ebana
 * **Role:** Data Analyst
-* **Tools Used:** Google BigQuery (SQL), Looker Studio
+* **Tools Used:** Google BigQuery (SQL), Tableau
 * **GCP Project ID:** `serene-bastion-480402-k8`
 * **Dataset:** `healthcare_analysis`
 
@@ -26,7 +26,7 @@ The pipeline follows an ELT architecture inside Google BigQuery, isolating raw s
 
 ```text
 [Raw Landing Zone]                 [Data Mart Layer]              [BI Layer]
-healthcare_data_raw  ──(SQL ELT)──>  healthcare_data_clean  ───>  Analytical Views  ───>  Looker Studio
+healthcare_data_raw  ──(SQL ELT)──>  healthcare_data_clean  ───>  Analytical Views  ───>  Tableau
 ```
 
 
