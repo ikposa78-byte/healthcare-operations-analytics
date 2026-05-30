@@ -1,3 +1,4 @@
+<img width="1222" height="821" alt="healthcare_dashboard" src="https://github.com/user-attachments/assets/c1d5f83c-1cca-4b1b-a731-958f9605fa9e" />
 # Healthcare Operations & Utilization Analysis
 
 ##  Author
@@ -17,7 +18,8 @@ By engineering deterministic tracking mechanics and advanced analytical views, t
 ## Executive Dashboard
 To view the fully interactive business intelligence dashboard, visit the live project here: [Tableau Public - Healthcare Operations & Utilization Dashboard](https://public.tableau.com/views/HealthcareOperationsUtilizationDashboard/OperationsDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
-![Healthcare Operations Dashboard](healthcare_dashboard.png)
+![Healthcare Operations Dashboard](<img width="1222" height="821" alt="healthcare_dashboard" src="https://github.com/user-attachments/assets/ec6332aa-0170-4e00-b6a1-803b2a10cb4d" />
+)
 
 ###  Key Deliverables
 1. **Production Transformation Pipeline:** Standardized raw strings, parsed dates, calculated core operational metrics, and implemented cryptographic patient hashing.
