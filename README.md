@@ -231,3 +231,16 @@ The semantic reporting layer built inside Google BigQuery serves as the direct d
 3. Execute `scripts/01_data_transformation.sql` to build the clean production table.
 4. Execute `scripts/02_analytical_views.sql` to generate the reporting infrastructure.
 5. Connect your Tableau Desktop / Tableau Public instance to BigQuery and replicate the dashboard schema mapped above.
+
+---
+
+## Data Source & Attribution
+The dataset used for this business intelligence pipeline is publicly available on Kaggle.
+* **Source:** [Kaggle - Healthcare Dataset](https://www.kaggle.com/code/likhithagudimetla/healthcare-dataset/input)
+* **Scope:** Contains records detailing patient demographics, medical conditions, admission dates, length of stay, and operational financial billing metadata used to model hospital utilization workflows.
+
+
+
+
+
+
