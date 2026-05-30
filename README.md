@@ -14,6 +14,11 @@ In the healthcare sector, operational efficiency and cost transparency directly 
 
 By engineering deterministic tracking mechanics and advanced analytical views, this project provides hospital administrators with critical insights into patient length of stay (LOS), billing distributions, clinical department performance, and high-utilization patient cohorts.
 
+## Executive Dashboard
+To view the fully interactive business intelligence dashboard, visit the live project here: [Tableau Public - Healthcare Operations & Utilization Dashboard](https://public.tableau.com/views/HealthcareOperationsUtilizationDashboard/OperationsDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
+![Healthcare Operations Dashboard](healthcare_dashboard.png)
+
 ###  Key Deliverables
 1. **Production Transformation Pipeline:** Standardized raw strings, parsed dates, calculated core operational metrics, and implemented cryptographic patient hashing.
 2. **Dynamic BI Reporting Layer:** Engineered 4 optimized SQL views leveraging advanced window functions to power operational and financial dashboards.
